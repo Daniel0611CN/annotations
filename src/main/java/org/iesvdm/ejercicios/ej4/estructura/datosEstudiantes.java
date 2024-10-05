@@ -4,17 +4,17 @@ import lombok.ToString;
 import org.iesvdm.ejercicios.ej4.anotacion.Estudiante;
 
 @org.iesvdm.ejercicios.ej4.anotacion.Estudiante(
-        colegio = "1",
-        nombre = "Andres",
-        curso = "4",
+        colegio = "Albero",
+        nombre = "Javier",
+        curso = "4º",
         edad = 12
 )
 @Estudiante(
-        colegio = "1",
+        colegio = "Virgen de la Peña",
         nombre = "Paula",
-        curso = "2",
+        curso = "2º",
         edad = 9
 )
 @ToString
-public class Datos {
+public class datosEstudiantes {
 }

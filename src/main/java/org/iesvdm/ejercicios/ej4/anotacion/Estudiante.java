@@ -1,5 +1,7 @@
 package org.iesvdm.ejercicios.ej4.anotacion;
 
+import lombok.ToString;
+
 import java.lang.annotation.*;
 
 @Retention(RetentionPolicy.RUNTIME)
