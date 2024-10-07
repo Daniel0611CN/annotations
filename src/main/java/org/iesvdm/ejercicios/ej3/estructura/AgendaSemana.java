@@ -2,6 +2,9 @@ package org.iesvdm.ejercicios.ej3.estructura;
 
 import org.iesvdm.ejercicios.ej3.anotacion.Tarea;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 @Tarea(
         title = "Ejercicios Anotaciones",
@@ -21,6 +24,8 @@ public class AgendaSemana {
 
         var listaTareas = AgendaSemana.class.getAnnotationsByType(Tarea.class);
 
+        List<org.iesvdm.ejercicios.ej3.estructura.Tarea> tareaLista = new ArrayList<>();
+
         System.out.println("\nLista de Tareas");
         System.out.println("---------------");
 
@@ -32,17 +37,13 @@ public class AgendaSemana {
                     tarea.description()
             );
 
-            tarea1.getTitle();
-            tarea1.getDia();
-            tarea1.getHora();
-            tarea1.getDescripcion();
+            tareaLista.add(tarea1);
 
             // pasarle estos datos a agendasemana;
 
-
-            System.out.println(tarea1.toString());
         }
 
+        System.out.println(tareaLista.toString());
 
     }
 
