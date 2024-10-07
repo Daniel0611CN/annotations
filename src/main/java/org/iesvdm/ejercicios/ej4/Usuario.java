@@ -1,4 +1,4 @@
-package org.iesvdm.ejercicios.ej4.estructura;
+package org.iesvdm.ejercicios.ej4;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
