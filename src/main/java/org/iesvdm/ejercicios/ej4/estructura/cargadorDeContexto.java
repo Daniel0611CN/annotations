@@ -26,13 +26,10 @@ public class cargadorDeContexto {
 
         Usuario user1 = null;
 
-//      user1.setCurso("");
-//      user1.setNombre("");
-//      user1.setEdad(0);
-
         System.out.println();
 
         for (Estudiante estudianteAnnotation : estudiantesAnnotation) {
+
             user1 = Usuario.builder().nombre(estudianteAnnotation.nombre()).edad(estudianteAnnotation.edad()).curso(estudianteAnnotation.curso()).build();
             System.out.println("Colegio: " + estudianteAnnotation.colegio());
             System.out.println("-----------------");

@@ -3,7 +3,7 @@ package org.iesvdm.ejercicios.ej4.estructura;
 import lombok.ToString;
 import org.iesvdm.ejercicios.ej4.anotacion.Estudiante;
 
-@org.iesvdm.ejercicios.ej4.anotacion.Estudiante(
+@Estudiante(
         colegio = "Albero",
         nombre = "Javier",
         curso = "4º",
