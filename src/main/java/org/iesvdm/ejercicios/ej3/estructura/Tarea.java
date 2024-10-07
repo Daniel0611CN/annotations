@@ -45,4 +45,14 @@ public class Tarea {
     public void setTitle(String title) {
         this.title = title;
     }
+
+    @Override
+    public String toString() {
+        return "Tarea{" +
+                "descripcion='" + descripcion + '\'' +
+                ", title='" + title + '\'' +
+                ", Dia='" + Dia + '\'' +
+                ", Hora='" + Hora + '\'' +
+                '}';
+    }
 }

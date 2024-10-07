@@ -25,12 +25,24 @@ public class AgendaSemana {
         System.out.println("---------------");
 
         for (Tarea tarea : listaTareas) {
-            System.out.println("Título: " + tarea.title());
-            System.out.println("Descripción: " + tarea.description());
-            System.out.println("Día: " + tarea.dia());
-            System.out.println("Hora: " + tarea.hora());
-            System.out.println("----------------------------");
+            org.iesvdm.ejercicios.ej3.estructura.Tarea tarea1 = new org.iesvdm.ejercicios.ej3.estructura.Tarea(
+                    tarea.title(),
+                    tarea.dia(),
+                    tarea.hora(),
+                    tarea.description()
+            );
+
+            tarea1.getTitle();
+            tarea1.getDia();
+            tarea1.getHora();
+            tarea1.getDescripcion();
+
+            // pasarle estos datos a agendasemana;
+
+
+            System.out.println(tarea1.toString());
         }
+
 
     }
 
